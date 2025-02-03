@@ -36,7 +36,7 @@ public class ConversionRateStepDefinitions {
     public void verify_that_conversion_rate_is_greater_than_1() throws InterruptedException {
         BigDecimal ConversionRate = new BigDecimal(ConversionRateStr);
         BigDecimal threshold = BigDecimal.ONE;
-        Assert.assertTrue(ConversionRate.compareTo(threshold)<0);
+        Assert.assertTrue(ConversionRate.compareTo(threshold)>0);
 
         Thread.sleep(2000);
         if (driver != null) {
